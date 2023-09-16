@@ -18,7 +18,18 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Paths - by MartonLyra */
+    /* Essa configuração informa que, em todos os imports, se começar com '@', significa que estará em /src/* */
+    /* Isso evita um monte de ../../../.  */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+
+
+
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
