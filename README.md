@@ -56,5 +56,5 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 
 
-Acabei de instalar o shadcn.
-Continuar a aula 1 em 30m30s.
+
+Continuar a aula 1 em 1m03m40s.
