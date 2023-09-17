@@ -32,9 +32,9 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - [33m30s] O arquivo [src/App.tsx](https://github.com/MartonLyra/video-transcript-ai/blob/main/src/App.tsx) é o arquivo principal do React. Aqui podemos escrever HTML, CSS, JavaScript, tudo junto, que é o grande poder do React.
 
-- [34m30] O [shadcn/ui](https://ui.shadcn.com/) trás os componentes mais específicos como botões, select. Mas, por exemplo, um cabeçalho, nós temos que criar.
+- [34m30s] O [shadcn/ui](https://ui.shadcn.com/) trás os componentes mais específicos como botões, select. Mas, por exemplo, um cabeçalho, nós temos que criar.
 
-- [37m40s] Quando você define a cor de um texto ou objeto, você poderia, usando o <code>Tailwind CSS</code>, colocar a dor diretamente (exemplo: <code>text-zinc-400</code>). Porém, como estamos usando o shadcn-ui, ele tráz umas cores meio que padrão, para você utilizar de forma fácil em várias partes do projeto. Por exemplo: <code>text-muted-foregrount<c/ode> que é um texto discreto, sem muito destaque. A vantagem de usar os nomes do shadcn-ui é que, se um dia, você quiser colocar um thema de outra cor, dessa forma fica mais fácil de alterar.
+- [37m40s] Quando você define a cor de um texto ou objeto, você poderia, usando o <code>Tailwind CSS</code>, colocar a dor diretamente (exemplo: <code>text-zinc-400</code>). Porém, como estamos usando o shadcn-ui, ele tráz umas cores meio que padrão, para você utilizar de forma fácil em várias partes do projeto. Por exemplo: <code>text-muted-foregrount</code> que é um texto discreto, sem muito destaque. A vantagem de usar os nomes do shadcn-ui é que, se um dia, você quiser colocar um thema de outra cor, dessa forma fica mais fácil de alterar.
 
 - [39m20s] Vamos configurar o primeiro componente do shadcn-ui, o Button.
 
@@ -44,7 +44,15 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - [42m10s] Queremos que a aplicação ocupe a tela inteira, um full screen. Para isso, no div principal, colocamos o className "min-h-screen". E seguimos a construção do front da aplicação.
 
-- [49m10s] Agora adicionamos o componente [textarea](https://ui.shadcn.com/docs/components/textarea) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add textarea</code>
+- [49m10s] Agora adicionamos o componente [textarea](https://ui.shadcn.com/docs/components/textarea) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add textarea</code>. Sempre lembrando que todos os componentes do shadcn-ui possuem a primeira letra em maiúsculo, para não confundir com as tags do HTML.
+
+- [53m15s] Inserindo o input type file para fazer o upload do vídeo. Usamos a propriedade "sr-only", ou seja, screen reader only. Essa propriedade vai remover da tela, visualmente, mas o elemento continua na DOM com suas funcionalidades, por conta de acessibilidade.
+
+- [59m10s] Instalando e usando o componente [label](https://ui.shadcn.com/docs/components/label) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add label</code>, seguido pelo prompt de transcrição.
+
+- [1h01m15s] Configurando o botão para carregar o vídeo.
+
+- [1h02m20s] Vamos agora incluir: o prompt, o modelo, a temperatura e o executar.
 
 
 
