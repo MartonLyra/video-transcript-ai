@@ -38,9 +38,13 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - [39m20s] Vamos configurar o primeiro componente do shadcn-ui, o Button.
 
-- [40m05s] 
+- [40m05s] Instalando e usando a biblioteca [lucide-react](https://lucide.dev/guide/packages/lucide-react) que permite usar diversos ícones no projeto. No caso, usaremos o ícone do Github.
 
+- [40m45s] Instalando o componente [separator](https://ui.shadcn.com/docs/components/separator) do shadcn/ui: <code>pnpm dlx shadcn-ui@latest add separator</code>. O componente foi salvo em <code>src/components/ui/separator.tsx</code>.
 
+- [42m10s] Queremos que a aplicação ocupe a tela inteira, um full screen. Para isso, no div principal, colocamos o className "min-h-screen". E seguimos a construção do front da aplicação.
+
+- [49m10s] Agora adicionamos o componente [textarea](https://ui.shadcn.com/docs/components/textarea) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add textarea</code>
 
 
 
