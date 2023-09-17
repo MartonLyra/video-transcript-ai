@@ -66,6 +66,3 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - Resulado da interface:
 
-
-
-Continuar a aula 1 em 1m03m40s.
