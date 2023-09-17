@@ -14,18 +14,18 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 #### Configurando o ambiente e estrutura do projeto
 
 - [13m00s] O primeiro passo foi gerar o projeto usando o [ViteJs](https://vitejs.dev/), uma ferramenta para gerar a estrutura inicial de vários tipos de projetos. Para isso, usei o template **React** e **TypeScript** como linguagem principal.
-- [14m45s] Uma vez criado a estrutura, baixei as dependências usando o pnpm, excluí alguns arquivos desnecessários e configurei outros.
+- [14m45s] Uma vez criado a estrutura, baixei as dependências usando o <code>pnpm</code>, excluí alguns arquivos desnecessários e configurei outros.
 - [17m50s] Vamos usar os componentes do [RadixUI](https://www.radix-ui.com/RadixUI), que são vários componentes prontos, funcionais, porém sem estilo.
 - [17m00s] Estaremos usando o [Tailwind CSS](https://tailwindcss.com/), uma biblioteca onde descrevemos componentes diretamente no class do HTML. Apesar dele deixar o HTML um pouco mais poluído, isso não chega a ser problema já que o React é bem dividido em componentes.
 - [19m40s] Também vamos usar o [shadcn/ui](https://ui.shadcn.com/), uma biblioteca com vários componentes implementados usando themas. O [shadcn/ui](https://ui.shadcn.com/) é perfeito para agrupar as funcionalidades do [RadixUI](https://www.radix-ui.com/RadixUI) com o [Tailwind CSS](https://tailwindcss.com/). O [shadcn/ui](https://ui.shadcn.com/) possui todos os componentes do [RadixUI](https://www.radix-ui.com/RadixUI) e mais alguns, estilizados, usando um Style Guide, ou seja, um padrão entre eles. Excelente para buscar produtividade, principalmente se você não precisa se preocupar muito em personalizar o front, de forma exclusiva. Se sua aplicação precisa de um design bem específico, então esquece o shadcn/ui, que trás uma estilização própria, coda a aplicação usando o RadixUI e o Tailwind CSS.
 
-- [20m40s] Quando instalamos o [shadcn/ui](https://ui.shadcn.com/), ele automaticamente já isntala o [RadixUI](https://www.radix-ui.com/RadixUI) e o [Tailwind CSS](https://tailwindcss.com/). Portanto, basta se preocupar em instalar o [shadcn/ui](https://ui.shadcn.com/).
+- [20m40s] Quando instalamos o [shadcn/ui](https://ui.shadcn.com/), ele automaticamente já instala o [RadixUI](https://www.radix-ui.com/RadixUI) e o [Tailwind CSS](https://tailwindcss.com/). Portanto, basta se preocupar em instalar o [shadcn/ui](https://ui.shadcn.com/).
 
 - [21m00s] Para instalar o [shadcn/ui](https://ui.shadcn.com/), basta ir na [página de instalação](https://ui.shadcn.com/docs/installation) e, como estamos usando o [ViteJs](https://vitejs.dev/), clicar no ícone do Vite.
 
 - [30m40s] Usei o VSCode com as seguintes extensões para desenvolver: [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker), [Prisma](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma), [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss), [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss).
 
-- [31m30s] Por padrão, o [shadcn/ui](https://ui.shadcn.com/) tem um <code>tema light</code>. Para mudar para o Dark, navegue até o site do [shadcn/ui](https://ui.shadcn.com/) e clique em [Themes](https://ui.shadcn.com/themes) e, no botão <code>Customize</code>, customizei diferente do instrutor, escolhendo o estilo (New York), cor (Verde), Mode (Dark), dentre outros. [32m30s] Uma vez personalizado, clique em <code>Copy code</code>, selecione o conteúdo da tag <code>.dark</code>, abre o arquivo no projeto [index.css](https://github.com/MartonLyra/video-transcript-ai/blob/main/src/index.css), e cole tudo dentro da tag :root, sem apagar a última linha <code>--radius</code>. Também pode excluir toda a tag <code>.dark</code>.
+- [31m30s] Por padrão, o [shadcn/ui](https://ui.shadcn.com/) tem um <code>tema light</code>. Para mudar para o Dark, navegue até o site do [shadcn/ui](https://ui.shadcn.com/) e clique em [Themes](https://ui.shadcn.com/themes) e, no botão <code>Customize</code>, customizei diferente do instrutor, escolhendo o estilo (New York), cor (Verde), Mode (Dark), dentre outros. [32m30s] Uma vez personalizado, clique em <code>Copy code</code>, selecione o conteúdo da tag <code>.dark</code>, abre o arquivo no projeto [index.css](https://github.com/MartonLyra/video-transcript-ai/blob/main/src/index.css), e cole tudo dentro da tag <code>:root</code>, sem apagar a última linha <code>--radius</code>. Também pode excluir toda a tag <code>.dark</code>.
 
 
 #### Agora vamos começar a construir a interface do projeto
@@ -40,7 +40,7 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - [40m05s] Instalando e usando a biblioteca [lucide-react](https://lucide.dev/guide/packages/lucide-react) que permite usar diversos ícones no projeto. No caso, usaremos o ícone do Github.
 
-- [40m45s] Instalando o componente [separator](https://ui.shadcn.com/docs/components/separator) do shadcn/ui: <code>pnpm dlx shadcn-ui@latest add separator</code>. O componente foi salvo em <code>src/components/ui/separator.tsx</code>.
+- [40m45s] Instalando o componente [separator](https://ui.shadcn.com/docs/components/separator) do shadcn/ui: <code>pnpm dlx shadcn-ui@latest add separator</code>. O componente foi salvo em [src/components/ui/separator.tsx](https://github.com/MartonLyra/video-transcript-ai/blob/main/src/components/ui/separator.tsx).
 
 - [42m10s] Queremos que a aplicação ocupe a tela inteira, um full screen. Para isso, no div principal, colocamos o className "min-h-screen". E seguimos a construção do front da aplicação.
 
@@ -54,6 +54,17 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - [1h02m20s] Vamos agora incluir: o prompt, o modelo, a temperatura e o executar.
 
+- [1h03m50s] Instalando componente [select](https://ui.shadcn.com/docs/components/select) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add select</code>, para selecionar o modelo de linguagem. O componente Select não é um componente apenas. Ele é formado por vários, Select´s, como, Select, SelectTrigger, SelectValue, dentre outros.
+
+- [1h06m38s] Agora vamos incluir a temperatura instalando componente [slider](https://ui.shadcn.com/docs/components/slider) do shadcn-ui: <code>pnpm dlx shadcn-ui@latest add slider</code>.
+
+- [1h08m20s] Incluímos o botão executar.
+
+- [1h09m08s] Faltou incluir o prompt da IA. Fizemos isso e concluímos a interface da aplicação.
+
+- Analisando o resultado da interface, optei por alterar a altura da tag de upload de vídeo. Ao invés de <code>aspect-ratio</code>, alterei para <code>h-20</code>.
+
+- Resulado da interface:
 
 
 
