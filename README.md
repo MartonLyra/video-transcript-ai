@@ -64,5 +64,6 @@ Objetivo: receber um vídeo do usuário via upload e, usando inteligência artif
 
 - Analisando o resultado da interface, optei por alterar a altura da tag de upload de vídeo. Ao invés de <code>aspect-ratio</code>, alterei para <code>h-20</code>.
 
-- Resulado da interface:
+##### **Resulado da interface:**
 
+![Print Front-end da aplicação](https://github.com/MartonLyra/video-transcript-ai/blob/main/prints/User%20Interface%20desenvolvido.PNG?raw=true)
